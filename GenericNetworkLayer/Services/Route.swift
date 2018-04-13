@@ -27,5 +27,3 @@ struct AnyRoute<Model: Codable> {
         return URL(string: baseUrl.absoluteString+endpoint)
     }
 }
-
-
