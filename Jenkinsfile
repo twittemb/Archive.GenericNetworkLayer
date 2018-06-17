@@ -1,21 +1,11 @@
 pipeline {
   agent {
     node {
-      label 'WarpBookPro'
+      label 'macOS'
     }
 
   }
   stages {
-    stage('Update Carthage') {
-      steps {
-        withEnv(overrides: ["PATH+CARTHAGE=/usr/local/bin"]) {
-          sh '''
-	    carthage bootstrap --verbose --platform iOS --cache-builds
-	  '''
-        }
-
-      }
-    }
     stage('Build') {
       steps {
         sh '''
