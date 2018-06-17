@@ -18,12 +18,12 @@ struct AnyRoute<Model: Codable> {
         self.id = id
     }
 
-    func getPath(forBaseUrl baseUrl: URL) -> URL? {
+    func getPath(forBaseUrl baseUrl: URL, andApiKey apiKey: String) -> URL? {
         var endpoint = self.endpoint
         if let id = self.id {
             endpoint = endpoint+"\(id)"
         }
 
-        return URL(string: baseUrl.absoluteString+endpoint)
+        return URL(string: baseUrl.absoluteString+endpoint+"?api_key=\(apiKey)")
     }
 }

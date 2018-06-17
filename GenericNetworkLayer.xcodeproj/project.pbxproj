@@ -17,7 +17,7 @@
 		1A0622052080457F00459C5B /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0621FE2080457E00459C5B /* People.swift */; };
 		1A0622062080457F00459C5B /* Peoples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0621FF2080457E00459C5B /* Peoples.swift */; };
 		1A0622072080457F00459C5B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0622012080457F00459C5B /* NetworkService.swift */; };
-		1A0622082080457F00459C5B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0622022080457F00459C5B /* Route.swift */; };
+		1ADDB95F20D6F01B00D7F1DB /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADDB95E20D6F01B00D7F1DB /* AnyRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		1A0621FE2080457E00459C5B /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		1A0621FF2080457E00459C5B /* Peoples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peoples.swift; sourceTree = "<group>"; };
 		1A0622012080457F00459C5B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		1A0622022080457F00459C5B /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		1ADDB95E20D6F01B00D7F1DB /* AnyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 		1A0622002080457F00459C5B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1ADDB95E20D6F01B00D7F1DB /* AnyRoute.swift */,
 				1A0622012080457F00459C5B /* NetworkService.swift */,
-				1A0622022080457F00459C5B /* Route.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 				1A0622032080457F00459C5B /* Planets.swift in Sources */,
 				1A0622042080457F00459C5B /* Planet.swift in Sources */,
 				1A0622062080457F00459C5B /* Peoples.swift in Sources */,
-				1A0622082080457F00459C5B /* Route.swift in Sources */,
+				1ADDB95F20D6F01B00D7F1DB /* AnyRoute.swift in Sources */,
 				1A0622052080457F00459C5B /* People.swift in Sources */,
 				1A0622072080457F00459C5B /* NetworkService.swift in Sources */,
 			);

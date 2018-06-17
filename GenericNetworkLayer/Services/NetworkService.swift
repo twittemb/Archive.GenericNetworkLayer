@@ -18,7 +18,7 @@ final class NetworkService {
 
     func fetch<TypeOfModel: Codable> (withRoute route: AnyRoute<TypeOfModel>, completionHandler handler: @escaping (TypeOfModel?) -> Void)  {
 
-        guard let url = route.getPath(forBaseUrl: self.baseUrl) else {
+        guard let url = route.getPath(forBaseUrl: self.baseUrl, andApiKey: "") else {
             handler(nil)
             return
         }

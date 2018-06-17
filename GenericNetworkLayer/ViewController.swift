@@ -25,40 +25,28 @@ class ViewController: UIViewController {
         let peoplesEndpoint = AnyRoute<Peoples>(withEndpoint: "people/")
 
         networkService.fetch(withRoute: planetEndpoint) { (planet) in
-            guard let planet = planet else {
-                print ("There is no planet")
-                return
-            }
+            guard let planet = planet else { print ("There is no planet") ; return }
 
             print ("---------- Planet 3")
             print (planet)
         }
 
         networkService.fetch(withRoute: planetsEndpoint) { (planets) in
-            guard let planets = planets else {
-                print ("There are no planets")
-                return
-            }
+            guard let planets = planets else { print ("There are no planets") ; return }
 
             print ("---------- All the planets")
             print (planets)
         }
 
         networkService.fetch(withRoute: peopleEndpoint) { (people) in
-            guard let people = people else {
-                print ("There is no people")
-                return
-            }
+            guard let people = people else {print ("There is no people") ; return }
 
             print ("---------- People 1")
             print (people)
         }
 
         networkService.fetch(withRoute: peoplesEndpoint) { (peoples) in
-            guard let peoples = peoples else {
-                print ("There are no people")
-                return
-            }
+            guard let peoples = peoples else { print ("There are no people") ; return }
 
             print ("---------- All the People")
             print (peoples)
